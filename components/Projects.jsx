@@ -208,11 +208,20 @@ export default function Projects({ config }) {
     ...githubRepos.slice(0, config.github.maxProjects),
   ];
 
-  const categories = ['All', ...new Set(config.featuredProjects.map((p) => p.category).filter(Boolean))];
+  const hasFeatured = config.featuredProjects.length > 0;
+  const categories = ['All', ...new Set(
+    hasFeatured
+      ? config.featuredProjects.map((p) => p.category).filter(Boolean)
+      : githubRepos.map((p) => p.language).filter(Boolean)
+  )];
   
   const filtered = filter === 'All'
     ? allProjects
-    : allProjects.filter((p) => p.category === filter);
+    : allProjects.filter((p) => 
+        hasFeatured 
+          ? p.category === filter 
+          : p.language === filter
+      );
 
   const displayed = showAll ? filtered : filtered.slice(0, 6);
 

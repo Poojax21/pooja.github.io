@@ -105,46 +105,7 @@ When I'm not coding, you'll find me exploring open-source projects, contributing
     },
   },
 
-  // ─── FEATURED PROJECTS (manual) ───────────────────────────
-  // These show first. GitHub projects auto-fill the rest.
-  featuredProjects: [
-    {
-      id: 1,
-      title: "Project Alpha",
-      description:
-        "A full-stack web application with real-time features, built with React, Node.js, and MongoDB. Features user authentication, live data updates, and a clean dashboard.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
-      github: "https://github.com/Poojax21",
-      live: "",
-      featured: true,
-      category: "Full Stack",
-    },
-    {
-      id: 2,
-      title: "Project Beta",
-      description:
-        "A responsive e-commerce platform with cart management, payment integration, and admin dashboard. Clean UI with smooth animations and mobile-first design.",
-      tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      github: "https://github.com/Poojax21",
-      live: "",
-      featured: true,
-      category: "E-Commerce",
-    },
-    {
-      id: 3,
-      title: "Project Gamma",
-      description:
-        "An AI-powered productivity tool that helps teams collaborate better. Built with modern APIs and a beautiful intuitive interface.",
-      tech: ["React", "Python", "FastAPI", "OpenAI"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      github: "https://github.com/Poojax21",
-      live: "",
-      featured: true,
-      category: "AI/ML",
-    },
-  ],
+  featuredProjects: [],
 
   // ─── EXPERIENCE ───────────────────────────────────────────
   experience: [
@@ -295,7 +256,7 @@ Remember: Your job is to QUALIFY visitors (understand what they need) and PITCH 
   github: {
     username: "Poojax21",
     fetchProjects: true, // Set to true to auto-fetch GitHub repos
-    maxProjects: 6, // Max projects to show from GitHub
+    maxProjects: 12, // Max projects to show from GitHub
     // Repos to exclude from auto-fetch (by repo name)
     exclude: ["Poojax21", ".github"],
   },
